@@ -204,7 +204,6 @@ body {
 .sneaker-big__img {
 	height: 600px;
 	width: 100%;
-	align-self: stretch;
 }
 
 .sneaker-big__info {
@@ -249,7 +248,11 @@ body {
 .sneaker-big__text p {
 	margin: 0;
 }
-
+.hr-sneaker-big {
+	margin: 0;
+	color: #121723;
+	border-bottom: 0px;
+}
 .sneaker-big__parameters {
 	margin-left: 32px;
 	width: 506px;
@@ -261,6 +264,7 @@ body {
 	font-size: 30px;
 	font-weight: 400;
 	margin: 0;
+	padding-bottom: 20px;
 }
 
 .sneaker-big__parameters-text {
