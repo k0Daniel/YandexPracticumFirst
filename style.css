@@ -187,9 +187,12 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border-top: 1px solid #a1a6b4;
 }
 
 .container__main__content {
+	width: 1044px;
+	padding: 48px;
 	margin: 32px 0;
 	background-color: #ffffff;
 	display: flex;
@@ -197,9 +200,6 @@ body {
 	border-radius: 50px;
 }
 
-.sneaker-big {
-	padding: 48px;
-}
 /* фото не во всю ширину */
 .sneaker-big__img {
 	height: 600px;
@@ -218,6 +218,11 @@ body {
 	font-weight: 400;
 	margin: 0;
 }
+.row {
+	padding: 24px 0;
+	display: flex;
+	justify-content: space-between;
+}
 .sneaker-big__subtitle {
 	color: #121723;
 	font-family: Anonymous Pro;
@@ -226,11 +231,14 @@ body {
 	margin: 0;
 	padding: 24px 0;
 }
+
 /* нет расстояния между свойствами */
 .sneaker-big__additional_info {
 	display: flex;
 }
+
 .sneaker-big__text {
+	margin: 0;
 	color: #121723;
 	font-family: Anonymous Pro;
 	font-size: 20px;
@@ -238,8 +246,13 @@ body {
 	width: 506px;
 }
 
+.sneaker-big__text p {
+	margin: 0;
+}
+
 .sneaker-big__parameters {
-	margin-left: 24px;
+	margin-left: 32px;
+	width: 506px;
 }
 
 .sneaker-big__parameters-title {
@@ -257,6 +270,5 @@ body {
 	font-weight: 400;
 	margin: 0;
 	display: flex;
-	padding: 24px 0;
 	justify-content: space-between;
 }
