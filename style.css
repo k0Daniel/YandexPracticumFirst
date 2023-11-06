@@ -55,7 +55,7 @@ body {
 	font-size: 48px;
 	font-weight: 700;
 	margin: 0;
-	padding-top: 25px;
+	padding: 32px 0;
 	width: 100%;
 }
 
@@ -73,16 +73,26 @@ body {
 	width: 1161px;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 24px;
 	justify-content: center;
 	margin: 0;
 }
-
+.sneakers {
+	width: 1161px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+	gap: 24px;
+}
 .sneaker {
 	width: 371px;
 	border-radius: 12px;
 	flex-direction: column;
 	display: inline-flex;
+}
+
+.sneaker a {
+	display: contents;
 }
 
 .card__title {
@@ -275,8 +285,8 @@ body {
 	justify-content: space-between;
 }
 
-/* adaptive */
-@media screen and (min-width: 280px) and (max-width: 1160px) {
+/* adaptive main */
+@media screen and (min-width: 375px) and (max-width: 1160px) {
 	.header {
 		max-width: 100%;
 	}
@@ -292,6 +302,22 @@ body {
 	.footer__container {
 		width: 100%;
 	}
+
+	.title {
+		font-size: 32px;
+	}
+
+	.sneaker {
+		width: 343px;
+	}
+
+	.card__image {
+		width: 343px;
+	}
+
+	.card__bottom {
+		width: auto;
+	}
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -303,7 +329,6 @@ body {
 		margin: 0 auto;
 		flex-direction: column;
 	}
-
 	.products {
 		width: 375px;
 	}
@@ -313,9 +338,13 @@ body {
 		flex-direction: column;
 		align-items: center;
 	}
+
+	.title {
+		width: 343px;
+	}
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1160px) {
 	.header__container {
 		width: 769px;
 		margin: 0 auto;
@@ -328,16 +357,4 @@ body {
 	}
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1160px) {
-	.header__container {
-		width: 769px;
-		margin: 0 auto;
-	}
-	.products {
-		width: 769px;
-	}
-
-	.footer__container {
-		width: 769px;
-	}
-}
+/* adaptive big card */
