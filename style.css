@@ -48,7 +48,7 @@ body {
 	color: #121723;
 }
 
-/* карточки */
+/* cards */
 .title {
 	color: #121723;
 	font-family: Anonymous Pro;
@@ -200,7 +200,6 @@ body {
 	border-radius: 50px;
 }
 
-/* фото не во всю ширину */
 .sneaker-big__img {
 	height: 600px;
 	width: 100%;
@@ -231,7 +230,6 @@ body {
 	padding: 24px 0;
 }
 
-/* нет расстояния между свойствами */
 .sneaker-big__additional_info {
 	display: flex;
 }
@@ -275,4 +273,71 @@ body {
 	margin: 0;
 	display: flex;
 	justify-content: space-between;
+}
+
+/* adaptive */
+@media screen and (min-width: 280px) and (max-width: 1160px) {
+	.header {
+		max-width: 100%;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.header__container {
+		width: 100%;
+	}
+
+	.footer__container {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+	.header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.header__container {
+		margin: 0 auto;
+		flex-direction: column;
+	}
+
+	.products {
+		width: 375px;
+	}
+	.footer__container {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.header__container {
+		width: 769px;
+		margin: 0 auto;
+	}
+	.products {
+		width: 769px;
+	}
+	.footer__container {
+		width: 769px;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1160px) {
+	.header__container {
+		width: 769px;
+		margin: 0 auto;
+	}
+	.products {
+		width: 769px;
+	}
+
+	.footer__container {
+		width: 769px;
+	}
 }
