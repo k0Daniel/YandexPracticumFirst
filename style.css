@@ -280,8 +280,40 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
+/* animate */
 
-/* adaptive main */
+.sneaker:hover {
+	transform: translate(0px, -10px);
+	transform: scale(105%);
+	filter: drop-shadow(10px 10px 13px rgba(0, 0, 0, 0.3));
+	transition: box-shadow ease-in-out 250ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+		scroll-behavior: smooth;
+	}
+}
+
+.fade {
+	opacity: 0;
+	transition: 1s;
+	animation:fade 1s 1;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes fade {
+	0%{
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+	
+}
+
+/* adaptive */
 @media screen and (min-width: 375px) and (max-width: 1160px) {
 	.header {
 		max-width: 100%;
@@ -411,14 +443,4 @@ body {
 	.sneaker-big__parameters-text {
 		font-size: 16px;
 	}
-}
-
-/* adaptive big card */
-
-/* animate */
-
-.sneaker:hover {
-	transform: translate(0px, -10px);
-	box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.3);
-	transition: box-shadow ease-in-out 250ms;
 }
