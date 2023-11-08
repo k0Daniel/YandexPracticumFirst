@@ -396,6 +396,9 @@ body {
 	.products {
 		width: 769px;
 	}
+	.title {
+		width: 709px;
+	}
 	.footer__container {
 		width: 769px;
 	}
