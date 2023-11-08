@@ -289,28 +289,8 @@ body {
 	transition: box-shadow ease-in-out 250ms;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	:root {
-		scroll-behavior: smooth;
-	}
-}
-
-.fade {
-	opacity: 0;
-	transition: 1s;
-	animation:fade 1s 1;
-	animation-fill-mode: forwards;
-
-}
-
-@keyframes fade {
-	0%{
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-	
+:root {
+	scroll-behavior: smooth;
 }
 
 /* adaptive */
