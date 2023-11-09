@@ -433,5 +433,6 @@ body {
 	}
 	.sneaker-big__parameters-text {
 		font-size: 16px;
+		text-align: right;
 	}
 }
