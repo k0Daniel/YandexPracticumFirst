@@ -284,9 +284,12 @@ body {
 .sneaker:hover {
 	transform: translate(0px, -10px);
 	filter: drop-shadow(1px 5px 5px rgba(0, 0, 0, 0.3));
-	transition: box-shadow ease-in-out 250ms;
+	transition: filter ease-in-out 250ms;
 }
-
+.sneaker:active {
+	filter: drop-shadow(1px 5px 5px rgba(0, 0, 0, 0.1));
+	transition: filter ease-in-out 150ms;
+}
 :root {
 	scroll-behavior: smooth;
 }
