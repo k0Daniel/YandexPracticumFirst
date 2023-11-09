@@ -21,10 +21,11 @@ body {
 .header__container {
 	background-color: #ffffff;
 	color: black;
+	width: 1140px;
 	justify-content: space-between;
 	align-items: center;
 	display: flex;
-	padding: 30px 0 16px 0;
+	padding: 24px 0 24px 0;
 }
 
 .logo {
@@ -65,18 +66,18 @@ body {
 	justify-content: center;
 	gap: 25px;
 	flex-wrap: wrap;
-	padding-bottom: 25px;
+	padding-bottom: 32px;
 }
 
 .products {
-	width: 1161px;
+	width: 1140px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0;
 }
 .sneakers {
-	width: 1161px;
+	width: 1140px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -84,7 +85,7 @@ body {
 	margin: 0;
 }
 .sneaker {
-	width: 371px;
+	width: 364px;
 	border-radius: 12px;
 	display: inline-flex;
 	flex-direction: column;
@@ -142,11 +143,15 @@ body {
 	background-color: #121723;
 	text-align: center;
 }
-
+.footer__hr {
+	background-color: 1px solid rgb(230, 232, 236);
+	opacity: 0.4;
+	width: 1140px;
+	margin: 0 auto;
+}
 .footer__container {
 	color: #ffffff;
-	border-bottom: 1px solid rgba(230, 232, 236, 0.4);
-	width: 1160px;
+	width: 1140px;
 	display: inline-flex;
 	align-items: center;
 	justify-content: space-between;
@@ -170,7 +175,7 @@ body {
 	font-size: 16px;
 	font-weight: 700;
 	text-align: center;
-	padding: 18px 0 21px 0;
+	padding: 24px 0;
 	margin: 0 auto;
 }
 
@@ -283,7 +288,9 @@ body {
 
 .sneaker:hover {
 	transform: translate(0px, -10px);
-	filter: drop-shadow(1px 5px 5px rgba(0, 0, 0, 0.3));
+	filter: drop-shadow(
+		4px 4px 5px rgba(0, 0, 0, 0.25)
+	); /* filter так как при box-shadow тени выходят за пределы карточки*/
 	transition: filter ease-in-out 250ms;
 }
 .sneaker:active {
@@ -341,6 +348,9 @@ body {
 	.logo {
 		margin-bottom: 24px;
 	}
+	.title {
+		width: 343px;
+	}
 	.products {
 		width: 375px;
 	}
@@ -348,19 +358,19 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding: 32px 0px 24px 0px;
 		margin: 0 auto;
 	}
-
 	.logo__footer {
 		margin-bottom: 32px;
+	}
+	.footer__hr {
+		width: 343px;
 	}
 	.sneaker-big {
 		width: 295px;
 		border-radius: 12px;
 		padding: 24px;
-	}
-	.title {
-		width: 343px;
 	}
 	.sneaker-big__img {
 		width: 100%;
@@ -403,6 +413,9 @@ body {
 		width: 709px;
 	}
 	.footer__container {
+		width: 769px;
+	}
+	.footer__hr {
 		width: 769px;
 	}
 	.sneaker-big {
